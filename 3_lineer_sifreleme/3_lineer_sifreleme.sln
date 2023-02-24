@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33110.190
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "3_lineer_sifreleme", "3_lineer_sifreleme\3_lineer_sifreleme.csproj", "{1A0BF43B-D9DC-4AFF-BC83-7F55043553F0}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1A0BF43B-D9DC-4AFF-BC83-7F55043553F0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1A0BF43B-D9DC-4AFF-BC83-7F55043553F0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1A0BF43B-D9DC-4AFF-BC83-7F55043553F0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1A0BF43B-D9DC-4AFF-BC83-7F55043553F0}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {8896C3E5-A0B7-456D-ACEC-8A9D5F571029}
+	EndGlobalSection
+EndGlobal
