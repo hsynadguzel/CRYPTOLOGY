@@ -9,13 +9,11 @@ class MainClass
     public static void Main(string[] args)
     {
         Sifreleme sifreleme = new Sifreleme();
-        Console.WriteLine("Sifrelenecek Veri: ankaragücü");
+        Console.WriteLine("Klasik Sifreleme / Sezar Algoritması");
         Console.WriteLine("Sifrelenmis: " + sifreleme.sezarSifreleme("ankaragücü")); //çpnçtçızez
         Console.WriteLine("Sifresi Cozulmus: " + sifreleme.sezarSifreCozme("çpnçtçızez")); //ankaragücü
         Console.ReadKey();
     }
-
-   
 }
 
 class Sifreleme
@@ -64,13 +62,17 @@ class Sifreleme
                 if (index + 3 >= 0 && index + 3 <= turkceAlfabe.Count)
                 {
                     int sonIndex = index + 3;
-                    sifrelenmisVeri = sifrelenmisVeri + turkceAlfabe[sonIndex].ToString();
+                    sifrelenmisVeri += turkceAlfabe[sonIndex].ToString();
                 }
                 else
                 {
                     int sonIndex = (index + 3) % 29;
-                    sifrelenmisVeri = sifrelenmisVeri + turkceAlfabe[sonIndex].ToString();
+                    sifrelenmisVeri += turkceAlfabe[sonIndex].ToString();
                 }
+            }
+            else
+            {
+                sifrelenmisVeri += "*";
             }
         }
         return sifrelenmisVeri;
@@ -88,13 +90,17 @@ class Sifreleme
                 if (index - 3 >= 0 && index - 3 <= turkceAlfabe.Count)
                 {
                     int sonIndex = index - 3;
-                    cozulmusVeri = cozulmusVeri + turkceAlfabe[sonIndex].ToString();
+                    cozulmusVeri += turkceAlfabe[sonIndex].ToString();
                 }
                 else
                 {
                     int sonIndex = (index - 3) + 29;
-                    cozulmusVeri = cozulmusVeri + turkceAlfabe[sonIndex].ToString();
+                    cozulmusVeri += turkceAlfabe[sonIndex].ToString();
                 }
+            }
+            else
+            {
+                cozulmusVeri += "?";
             }
         }
         return cozulmusVeri;

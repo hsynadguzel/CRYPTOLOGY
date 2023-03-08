@@ -9,7 +9,7 @@ class MainClass
     static void Main(string[] args)
     {
         Sifreleme sifreleme = new Sifreleme();
-        Console.WriteLine("Sifrelenecek Veri: ankaragücü");
+        Console.WriteLine("Klasik Sifreleme / Lineer Sifreleme Algoritmasi");
         Console.WriteLine("Sifrelenmis: " + sifreleme.lineerSifreleme("ankaragücü", 5, 7)); //galgrgknon
         Console.WriteLine("Sifresi Cozulmus: " + sifreleme.lineerSifreCozme("galgrgknon", 5, 7)); //ankaragücü
         Console.ReadKey();
@@ -18,7 +18,7 @@ class MainClass
 
 class Sifreleme
 {
-        public List<string> turkceAlfabe = new List<string> {
+    public List<string> turkceAlfabe = new List<string> {
         "a",
         "b",
         "c",
@@ -50,7 +50,7 @@ class Sifreleme
         "z"
       };
 
-        public string lineerSifreleme(string veri, int a, int b) 
+    public string lineerSifreleme(string veri, int a, int b) 
         {
             string sifrelenmisVeri = "";
             char[] veriList = veri.ToCharArray();
@@ -63,28 +63,32 @@ class Sifreleme
                     int indexB = indexA + b;
                     if (indexB >= 0 && indexB <= turkceAlfabe.Count)
                     {
-                        sifrelenmisVeri = sifrelenmisVeri + turkceAlfabe[indexB].ToString();
+                        sifrelenmisVeri += turkceAlfabe[indexB].ToString();
                     }
                     else
                     {
                         int sonIndex = indexB % 29;
-                        sifrelenmisVeri = sifrelenmisVeri + turkceAlfabe[sonIndex].ToString();
+                        sifrelenmisVeri += turkceAlfabe[sonIndex].ToString();
                     }
                 }
-            
-            }
+                else
+                {
+                    sifrelenmisVeri += "*";
+                }
+
+        }
             return sifrelenmisVeri;
         }
 
-        public string lineerSifreCozme(string veri, int a, int b)
+    public string lineerSifreCozme(string veri, int a, int b)
         {
-            int sayac = 1;
-            if ((a * sayac) % 29 == 1)
+            if ((a * 1) % 29 == 1)
             {
                  a = a;
             }
             else
             {
+                int sayac = 1;
                 while (true)
                 {
                     if ((a * sayac) % 29 == 1)
@@ -110,9 +114,13 @@ class Sifreleme
                     int sonIndex = (indexA * a) % 29;
                     cozulmusVeri = cozulmusVeri + turkceAlfabe[sonIndex].ToString();
                 }
-            }
+                else
+                {
+                     cozulmusVeri += "?";
+                }
+        }
             return cozulmusVeri;
         }
 
-    }
+}
 

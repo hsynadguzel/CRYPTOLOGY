@@ -9,13 +9,11 @@ class MainClass
     public static void Main(string[] args)
     {
         Sifreleme sifreleme = new Sifreleme();
-        Console.WriteLine("Sifrelenecek Veri: ankaragücü");
+        Console.WriteLine("Klasik Sifreleme / Kaydirmali Sezar Algoritmasi");
         Console.WriteLine("Sifrelenmis: " + sifreleme.kaydirmaliSifreleme("ankaragücü",18)); //öecöhöülrl - anahtar:18
         Console.WriteLine("Sifresi Cozulmus: " + sifreleme.kaydirmaliSifreCozme("öecöhöülrl", 18)); //ankaragücü - anahtar:18
         Console.ReadKey();
     }
-
-
 }
 
 class Sifreleme
@@ -64,13 +62,17 @@ class Sifreleme
                 if (index + kSayi >= 0 && index + kSayi <= turkceAlfabe.Count)
                 {
                     int sonIndex = index + kSayi;
-                    sifrelenmisVeri = sifrelenmisVeri + turkceAlfabe[sonIndex].ToString();
+                    sifrelenmisVeri += turkceAlfabe[sonIndex].ToString();
                 }
                 else
                 {
                     int sonIndex = (index + kSayi) % 29;
-                    sifrelenmisVeri = sifrelenmisVeri + turkceAlfabe[sonIndex].ToString();
+                    sifrelenmisVeri += turkceAlfabe[sonIndex].ToString();
                 }
+            }
+            else
+            {
+                sifrelenmisVeri += "*";
             }
         }
         return sifrelenmisVeri;
@@ -88,13 +90,17 @@ class Sifreleme
                 if (index - kSayi >= 0 && index - kSayi <= turkceAlfabe.Count)
                 {
                     int sonIndex = index - kSayi;
-                    cozulmusVeri = cozulmusVeri + turkceAlfabe[sonIndex].ToString();
+                    cozulmusVeri += turkceAlfabe[sonIndex].ToString();
                 }
                 else
                 {
                     int sonIndex = (index - kSayi) + 29;
-                    cozulmusVeri = cozulmusVeri + turkceAlfabe[sonIndex].ToString();
+                    cozulmusVeri += turkceAlfabe[sonIndex].ToString();
                 }
+            }
+            else
+            {
+                cozulmusVeri += "?";
             }
         }
         return cozulmusVeri;
