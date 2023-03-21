@@ -1,0 +1,8 @@
+C:\Users\Huseyin\Desktop\2023 BAHAR BİLGİSAYAR MÜHENDİSLİĞİ SELÇUK ÜNİVERSİTESİ\KRİPTOLOJİ\uygulamalar\5_permutasyon_sifreleme\5_permutasyon_sifreleme\obj\Debug\5_permutasyon_sifreleme.csproj.AssemblyReference.cache
+C:\Users\Huseyin\Desktop\2023 BAHAR BİLGİSAYAR MÜHENDİSLİĞİ SELÇUK ÜNİVERSİTESİ\KRİPTOLOJİ\uygulamalar\5_permutasyon_sifreleme\5_permutasyon_sifreleme\obj\Debug\5_permutasyon_sifreleme.csproj.SuggestedBindingRedirects.cache
+C:\Users\Huseyin\Desktop\2023 BAHAR BİLGİSAYAR MÜHENDİSLİĞİ SELÇUK ÜNİVERSİTESİ\KRİPTOLOJİ\uygulamalar\5_permutasyon_sifreleme\5_permutasyon_sifreleme\obj\Debug\5_permutasyon_sifreleme.csproj.CoreCompileInputs.cache
+C:\Users\Huseyin\Desktop\2023 BAHAR BİLGİSAYAR MÜHENDİSLİĞİ SELÇUK ÜNİVERSİTESİ\KRİPTOLOJİ\uygulamalar\5_permutasyon_sifreleme\5_permutasyon_sifreleme\bin\Debug\5_permutasyon_sifreleme.exe.config
+C:\Users\Huseyin\Desktop\2023 BAHAR BİLGİSAYAR MÜHENDİSLİĞİ SELÇUK ÜNİVERSİTESİ\KRİPTOLOJİ\uygulamalar\5_permutasyon_sifreleme\5_permutasyon_sifreleme\bin\Debug\5_permutasyon_sifreleme.exe
+C:\Users\Huseyin\Desktop\2023 BAHAR BİLGİSAYAR MÜHENDİSLİĞİ SELÇUK ÜNİVERSİTESİ\KRİPTOLOJİ\uygulamalar\5_permutasyon_sifreleme\5_permutasyon_sifreleme\bin\Debug\5_permutasyon_sifreleme.pdb
+C:\Users\Huseyin\Desktop\2023 BAHAR BİLGİSAYAR MÜHENDİSLİĞİ SELÇUK ÜNİVERSİTESİ\KRİPTOLOJİ\uygulamalar\5_permutasyon_sifreleme\5_permutasyon_sifreleme\obj\Debug\5_permutasyon_sifreleme.exe
+C:\Users\Huseyin\Desktop\2023 BAHAR BİLGİSAYAR MÜHENDİSLİĞİ SELÇUK ÜNİVERSİTESİ\KRİPTOLOJİ\uygulamalar\5_permutasyon_sifreleme\5_permutasyon_sifreleme\obj\Debug\5_permutasyon_sifreleme.pdb
